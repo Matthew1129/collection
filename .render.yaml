@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: oil-collection-app
+    env: python
+    buildCommand: ""
+    startCommand: "gunicorn oil_collection_flask_app:app"
+    plan: free
